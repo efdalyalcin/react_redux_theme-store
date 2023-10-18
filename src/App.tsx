@@ -8,14 +8,16 @@ function App() {
   const isDarkTheme = useSelector(selectIsDarkTheme);
 
   return (
-    <div
-      className="App"
-      style={{ backgroundColor: isDarkTheme ? '#ccc' : '#fff' }}
-    >
-      <p>Parent Component</p>
-      <MyComponent />
+    <>
+      <div
+        className="App"
+        style={{ backgroundColor: isDarkTheme ? '#ccc' : '#fff' }}
+      >
+        <p>Parent Component</p>
+        <MyComponent />
+      </div>
       <NonRelatedComponent />
-    </div>
+    </>
   );
 }
 

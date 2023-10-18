@@ -1,4 +1,6 @@
 function NonRelatedComponent() {
+  console.log('PureComponent rendered');
+
   return (
     <div
       style={{
